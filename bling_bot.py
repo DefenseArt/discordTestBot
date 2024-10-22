@@ -1,8 +1,7 @@
+import os
 import discord
 from discord.ext import commands
 import yt_dlp  # youtube_dl 대신 yt-dlp 사용
-import os
-
 
 # 봇 설정
 intents = discord.Intents.default()
@@ -63,6 +62,5 @@ async def stop(ctx):
     if voice_client and voice_client.is_connected():
         await voice_client.disconnect()
 
-acces_token = os.environ["BOT_TOKEN"]
-# 봇 토큰 입력 (자신의 봇 토큰을 여기에 넣어야 합니다)
-bot.run(acces_token)
+# 봇 토큰 입력 (환경 변수에서 가져오기)
+bot.run(os.getenv('BOT_TOKEN'))
