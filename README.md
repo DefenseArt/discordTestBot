@@ -9,12 +9,12 @@
 - **Compute Engine → VM 인스턴스** 이동
 
 ### 1.2 새로운 VM 인스턴스 생성
-- **이름:** `discord-bot`
-- **리전:** 가까운 리전 선택 (예: `asia-northeast3` 서울)
-- **머신 타입:** `e2-micro` (무료 티어 가능)
-- **부트 디스크:** `Ubuntu 22.04 LTS` 선택
-- **방화벽:** HTTP 및 HTTPS 트래픽 허용 체크
-- **생성** 버튼 클릭 후 완료될 때까지 기다립니다.
+- **이름:** 
+- **리전:** 
+- **머신 타입:** 
+- **부트 디스크:** 
+- **방화벽:** 
+- **생성** 
 
 ---
 
@@ -28,3 +28,9 @@ GCP 콘솔에서 **SSH 연결** 버튼을 클릭합니다.
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3 python3-pip ffmpeg -y
 ```
+### 3. Python 패키지 설치
+```sh
+pip3 install discord yt-dlp asyncio python-dotenv
+```
+
+### 3.1 .env 파일 설정 (직접 업로드)
