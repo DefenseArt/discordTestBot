@@ -34,3 +34,5 @@ pip3 install discord yt-dlp asyncio python-dotenv
 ```
 
 ### 3.1 .env 파일 설정 (직접 업로드)
+
+### 4. screen을 이용한 24시간 실행 
